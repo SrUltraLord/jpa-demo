@@ -23,6 +23,7 @@ public class Student {
   @JoinColumn(name = "address_id", referencedColumnName = "id")
   private Address address;
 
-  // Todo 2
+  @ManyToMany(fetch = FetchType.EAGER, mappedBy = "students")
+  @ToString.Exclude
   private Set<Course> courses = new HashSet<>();
 }

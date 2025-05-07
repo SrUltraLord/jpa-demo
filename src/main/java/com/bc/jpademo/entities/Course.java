@@ -19,10 +19,12 @@ public class Course {
 
   private String title;
 
-  // Todo 1
-  private Professor professor;
+  @ManyToOne @ToString.Exclude private Professor professor;
 
-  // Todo 2
-  @ToString.Exclude
+  @ManyToMany(fetch = FetchType.EAGER)
+  @JoinTable(
+      name = "students_courses",
+      joinColumns = @JoinColumn(name = "course_id", referencedColumnName = "id"),
+      inverseJoinColumns = @JoinColumn(name = "student_id", referencedColumnName = "id"))
   private Set<Student> students = new HashSet<>();
 }

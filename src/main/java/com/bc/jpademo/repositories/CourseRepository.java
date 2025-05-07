@@ -1,12 +1,16 @@
 package com.bc.jpademo.repositories;
 
 import com.bc.jpademo.entities.Course;
+import com.bc.jpademo.entities.CourseProjection;
+import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CourseRepository extends JpaRepository<Course, Long> {
-  // Todo 4
+  List<Course> findByProfessorName(String professorName);
 
-  // Todo 6
+  @Query("SELECT c.title AS title, SIZE(c.students) AS total FROM Course c")
+  List<CourseProjection> findCourseTotals();
 }

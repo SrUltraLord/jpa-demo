@@ -19,7 +19,7 @@ public class Professor {
 
   private String name;
 
-  // Todo 1
-  @ToString.Exclude
+  @OneToMany(fetch = FetchType.EAGER)
+  @JoinColumn(name = "professor_id")
   private Set<Course> courses = new HashSet<>();
 }

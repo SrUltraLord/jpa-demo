@@ -23,10 +23,6 @@ public class Student {
   @JoinColumn(name = "address_id", referencedColumnName = "id")
   private Address address;
 
-  @ManyToMany(fetch = FetchType.EAGER)
-  @JoinTable(
-      name = "students_courses",
-      joinColumns = @JoinColumn(name = "student_id"),
-      inverseJoinColumns = @JoinColumn(name = "course_id"))
+  // Todo 2
   private Set<Course> courses = new HashSet<>();
 }

@@ -19,11 +19,10 @@ public class Course {
 
   private String title;
 
-  @ManyToOne(fetch = FetchType.EAGER)
-  @JoinColumn(name = "professor_id")
+  // Todo 1
   private Professor professor;
 
-  @ManyToMany(mappedBy = "courses", fetch = FetchType.EAGER)
+  // Todo 2
   @ToString.Exclude
   private Set<Student> students = new HashSet<>();
 }

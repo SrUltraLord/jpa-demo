@@ -19,7 +19,7 @@ public class Professor {
 
   private String name;
 
-  @OneToMany(mappedBy = "professor", cascade = CascadeType.ALL, orphanRemoval = true)
+  // Todo 1
   @ToString.Exclude
   private Set<Course> courses = new HashSet<>();
 }

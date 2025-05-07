@@ -1,12 +1,12 @@
 package com.bc.jpademo.repositories;
 
-import com.bc.jpademo.entities.Student;
+import com.bc.jpademo.entities.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student, Long> {
-  // Todo 3
+public interface CourseRepository extends JpaRepository<Course, Long> {
+  // Todo 4
 
-  // Todo 5
+  // Todo 6
 }

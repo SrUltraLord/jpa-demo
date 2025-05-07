@@ -1,8 +1,6 @@
 package com.bc.jpademo.entities;
 
 import jakarta.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 import lombok.*;
 
 @Entity
@@ -20,6 +18,6 @@ public class Professor {
   private String name;
 
   // Todo 1
-  @ToString.Exclude
-  private Set<Course> courses = new HashSet<>();
+  //  @ToString.Exclude
+  //  private Set<Course> courses = new HashSet<>();
 }

@@ -1,6 +1,5 @@
 package com.bc.jpademo;
 
-import com.bc.jpademo.repositories.StudentRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -15,11 +14,11 @@ public class JpaDemoApplication {
     SpringApplication.run(JpaDemoApplication.class, args);
   }
 
+  // 💉 You can inject dependencies here!
   @Bean
-  CommandLineRunner runner(StudentRepository studentRepository) {
+  CommandLineRunner runner() {
     return args -> {
-      var students = studentRepository.findAll();
-      students.forEach(student -> log.info("Student: {}", student));
+      // 💡 You can try your repositories here!
     };
   }
 }

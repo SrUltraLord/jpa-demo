@@ -12,7 +12,7 @@ Se plantean las entidades base para realizar el challenge. Ustedes deben resolve
 - [ ] Crear un método para encontrar todos los cursos por un profesor dado su `name` exacto.
 - [ ] Usando **JPQL** crear un método que permita encontrar todos los estudiantes que viven en una `street` dada.
 - [ ] Usando **JPQL** y **proyecciones** crear un método que devuelva una lista del nombre de los cursos con su total de
-  profesores.
+  alumnos.
 
 ## 🖼️ Diagrama ER
 

@@ -1,6 +1,15 @@
-# Docker Example
+# ✏️ JPA Demo
 
-In this example, we show how you can use [Docker with CodeSandbox](https://codesandbox.io/post/introducing-docker-support-in-codesandbox). Check [the Dockerfile](./.devcontainer/Dockerfile) to see how we configure the container of this sandbox. You can simply edit it yourself and the container will rebuild. Make sure to fork the sandbox first by clicking "Fork" in the top left corner.
+Este es un proyecto para poder poner en práctica lo visto en la sesión 12 de nuestro bootcamp.
+Se plantean las entidades base para realizar el challenge. Ustedes deben resolver lo siguiente:
 
-- Every new terminal will run inside this new container, open a new terminal with CTRL ~
-- We set up an example sandbox task that runs `whereis htop`. Typically this would be where you run `yarn run serve`. You can edit it in [tasks.json](./.codesandbox/tasks.json)
+## 💡 Todo
+
+- [ ] Agregar las anotaciones necesarias para cumplir con `nxn` entre estudiantes y cursos.
+- [ ] Generar un método en `UserRepository` para buscar todos los usuarios por
+
+## 🖼️  Diagrama ER
+
+![ER Diagram](./assets/er_diagram.png)
+
+Made with ❤️ by David Reyes
